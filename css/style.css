@@ -266,6 +266,8 @@ max-width: 500px;
  display: flex;
  flex-wrap: wrap;
  margin: 0 -10px 60px;
+ 
+ justify-content: space-between;
 }
 .products__block {
 width: 33.33%;
@@ -278,12 +280,10 @@ background-color: #14141D;
 border-radius: 10px;
 transition: background-color .2s ease;
 display: block;
+margin: 5%;
 
 
 
-width: calc(30% - 10px); /* Ширина карточки для трех в ряд */
-margin-bottom: 20px;
-box-sizing: border-box; /* Учтите внешние отступы в размере ширины */
 }
 .products__item:hover {
     background-color: #22222F;
@@ -380,11 +380,3 @@ margin: 0 -10px 60px;
     width: 33.33%;
 }
 /* /.Footer */
-#output {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .products__item {
-  }

@@ -70,7 +70,7 @@
                 <p class="intro__text">Кофе варят путем обжаривания зеленых кофейных зерен на горячих углях в жаровне. Дайте себе возможность это попробовать.
                 </p>
                 <div class="intro__actions">
-                    <a class="btn btn-main" href="#">
+                    <a class="btn btn-main" href="output">
                         Купить сейчас
                     </a>
                     <a class="btn btn-secondary" href="#">Узнать больше
@@ -111,8 +111,8 @@
                 <h3 class="products__title">
                     Lavazza coffee</h3>
                 <div class="products__footer">
-                    <div class="products__price">$19.99
-                        <del>$29.99</del>
+                    <div class="products__price">300 Р
+                        <del>500 Р</del>
                     </div>
                     <button type="button" class="products__favorite">
                         <img src="img/favorite 1.svg" alt="">
@@ -125,14 +125,13 @@
         
     </div> <!-- /.products__wrapper-->
     <script>
-    // Создаем саму карточку товара
+    // Шаблонизирую карточку товара
         var productCard = document.querySelector('.products__item');
         
-        // Создаем контейнер, в который будем добавлять карточки
         var container = document.getElementById('output');
         
-        // Клонируем карточку и добавляем ее в контейнер нужное количество раз
-        for (var i = 0; i < 5; i++) {
+        // Клонирую карточку товара и создаю ее несколько раз
+        for (var i = 0; i < 2; i++) {
           var clonedCard = productCard.cloneNode(true);
           container.appendChild(clonedCard);
         }</script>
